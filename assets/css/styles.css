@@ -1,0 +1,461 @@
+@import url('reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body, html {
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    background-image: url(../img/header-mobile.png);
+    background-repeat: no-repeat;
+    background-size: contain; 
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (min-width: 1280px) {
+        background-image: url(../img/header-desktop.png);
+        background-size: cover;
+        height: 80vh;
+    }
+}
+
+header .content {
+    padding: 0px 24px 0px 24px;
+    width: 428px;
+    height: 366px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @media screen and (min-width: 1280px) {
+        width: 752px;
+        height: 270px;
+
+        align-items: center;
+    }
+}
+
+header h1 {
+    font-family: 'Luckiest Guy', cursive;
+    color: white;
+    font-weight: 400;
+    font-size: 32px;
+
+    @media screen and (min-width: 1280px) {
+        text-align: center;
+        font-size: 56px;
+        font-weight: 400;
+        line-height: 56px;
+    }
+}
+
+header p {
+    font-family: "Open Sans", system-ui;
+    color: white;
+    font-weight: 400;
+    font-size: 16px;
+
+    @media screen and (min-width: 1280px) {
+        width: 756px;
+        height: 66px;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 21.79px;
+    }
+}
+
+header .botoes {
+    width: 381px;
+    height: 122px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @media screen and (min-width: 1280px) {
+        width: 502px;
+        height: 44px;
+        gap: 16px;
+
+        flex-direction: row;
+    }
+}
+
+header .botoes button {
+    width: 381px;
+    height: 54px;
+    font-family: "Open Sans", system-ui;
+    font-weight: 400;
+    font-size: 16px;
+    border-radius: 28px;
+    border: none;
+}
+
+header .botoes .baixar {
+    background-color: white;
+    color: #23272A;
+
+    @media screen and (min-width: 1280px) {
+        width: 205px;
+        height: 44px;
+    }
+}
+
+header .botoes .abrir {
+    background-color: #23272A;
+    color: white;
+
+    @media screen and (min-width: 1280px) {
+        width: 281px;
+        height: 44px;
+    }
+}
+
+.secao-1 {
+    background-color: white;
+    height: 110vh;
+    padding: 40px 24px 40px 24px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (min-width: 1280px) {
+        padding: 0px 24px 0px 24px;
+        height: 80vh;
+    }
+}
+
+.secao-1 .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+
+    @media screen and (min-width: 1280px) {
+        width: 971px;
+        height: 394px;
+        flex-direction: row;
+        justify-content: flex-start;
+        height: auto;
+    }
+}
+
+.secao-1 .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.secao-1 .content .imagem {
+    background-image: url("../img/secao-1-mobile.png");
+    width: 379px;
+    height: 252px;
+
+    @media screen and (min-width: 1280px) {
+        background-image: url("../img/secao-1-desktop.png");
+        width: 607px;
+        height: 394px;
+    }
+}
+
+.secao-1 .content h2 {
+    width: 370px;
+    height: 99px;
+    font-family: "Open Sans", system-ui;
+    font-size: 24px;
+    font-weight: 800;
+    color: #23272A;
+    line-height: 32.68px;
+
+    @media screen and (min-width: 1280px) {
+        width: 329px;
+        height: 270px;
+        font-size: 40px;
+        line-height: 54.47px;
+    }
+}
+
+.secao-1 .content p {
+    font-family: "Open Sans", system-ui;
+    font-size: 16px;
+    font-weight: 400px;
+    color: #23272A;
+    line-height: 21.79px;
+    margin-top: 25px;
+
+    @media screen and (min-width: 1280px) {
+        width: 348px;
+        height: 88px;
+        font-size: 16px;
+        line-height: 21.79px;
+        margin-top: 0px;
+    }
+}
+
+.secao-2 {
+    background-color: #F6F6F6;
+    height: 100vh;
+    padding: 40px 24px 40px 24px;
+    gap: 27px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (min-width: 1280px) {
+        padding: 0px 24px 0px 24px;
+        height: 80vh;
+    }
+}
+
+.secao-2 .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+
+    @media screen and (min-width: 1280px) {
+        width: 1280px;
+        height: 394px;
+        flex-direction: row-reverse;
+        justify-content: center;
+        height: auto;
+    }
+}
+
+.secao-2 .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.secao-2 .content .imagem {
+    background-image: url("../img/secao-2-mobile.png");
+    width: 379px;
+    height: 252px;
+
+    @media screen and (min-width: 1280px) {
+        background-image: url("../img/secao-2-desktop.png");
+        width: 607px;
+        height: 394px;
+        margin-left: 10px;
+    }
+}
+
+.secao-2 .content h2 {
+    width: 379px;
+    height: 33px;
+    font-family: "Open Sans", system-ui;
+    font-size: 24px;
+    font-weight: 800;
+    color: #23272A;
+
+    @media screen and (min-width: 1280px) {
+        width: 329px;
+        height: 108px;
+        font-size: 40px;
+        line-height: 54.47px;
+    }
+}
+
+.secao-2 .content p {
+    font-family: "Open Sans", system-ui;
+    font-size: 16px;
+    font-weight: 400px;
+    color: #23272A;
+    line-height: 21.79px;
+    margin-top: 20px;
+
+    @media screen and (min-width: 1280px) {
+        width: 348px;
+        height: 88px;
+        font-size: 16px;
+        line-height: 21.79px;
+        margin-top: 15px;
+    }
+}
+
+.secao-3 {
+    background-color: white;
+    height: 100vh;
+    padding: 40px 24px 40px 24px;
+    gap: 27px;
+
+    @media screen and (min-width: 1280px) {
+        padding: 40px 24px 0px 24px;
+        height: 80vh;
+    }
+}
+
+.secao-3 .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.secao-3 .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+
+    @media screen and (min-width: 1280px) {
+        width: 1280px;
+        height: 500px;
+        flex-direction: row;
+        justify-content: center;
+        height: auto;
+    }
+}
+
+.secao-3 .content .imagem {
+    background-image: url("../img/secao-3-mobile.png");
+    width: 379px;
+    height: 252px;
+
+    @media screen and (min-width: 1280px) {
+        background-image: url("../img/secao-3-desktop.png");
+        width: 607px;
+        height: 394px;
+        margin-left: 10px;
+    }
+}
+
+.secao-3 .content h2 {
+    width: 373px;
+    height: 33px;
+    font-family: "Open Sans", system-ui;
+    font-size: 24px;
+    font-weight: 800;
+    color: #23272A;
+    line-height: 32.68px;
+
+    @media screen and (min-width: 1280px) {
+        width: 329px;
+        height: 108px;
+        font-size: 40px;
+        line-height: 54.47px;
+    }
+}
+
+.secao-3 .content p {
+    width: 378px;
+    height: 88px;
+    font-family: "Open Sans", system-ui;
+    font-size: 16px;
+    font-weight: 400px;
+    color: #23272A;
+    line-height: 21.79px;
+    margin-top: 20px;
+
+    @media screen and (min-width: 1280px) {
+        width: 348px;
+        height: 88px;
+        font-size: 16px;
+        line-height: 21.79px;
+        margin-top: 15px;
+    }
+}
+
+.secao-4 {
+    background-color: #F6F6F6;
+    height: 110vh;
+    padding: 40px 24px 40px 24px;
+    gap: 27px;
+
+    @media screen and (min-width: 1280px) {
+        padding: 20px 24px 0px 24px;
+        height: 125vh;
+    }
+}
+
+.secao-4 .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+
+    @media screen and (min-width: 1280px) {
+        width: 1280px;
+        height: 110vh;
+        align-items: center;
+    }
+}
+
+.secao-4 .content h1 {
+    width: 376px;
+    height: 64px;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 32px;
+    font-weight: 800;
+    color: #23272A;
+    line-height: 32px;
+
+    @media screen and (min-width: 1280px) {
+        text-align: center;
+        width: 608px;
+        height: 80px;
+        font-size: 40px;
+        line-height: 43px;
+        margin-top: 25px;
+    }
+}
+
+.secao-4 .content p {
+    width: 378px;
+    height: 88px;
+    font-family: "Open Sans", system-ui;
+    font-size: 16px;
+    font-weight: 400px;
+    color: #23272A;
+    line-height: 21.79px;
+
+    @media screen and (min-width: 1280px) {
+        text-align: center;
+        width: 802px;
+        height: 44px;
+        line-height: 21.79px;
+        margin-top: 50px;
+    }
+}
+
+.secao-4 .content .imagem {
+    background-image: url("../img/secao-4-mobile.png");
+    width: 379px;
+    height: 252px;
+
+    @media screen and (min-width: 1280px) {
+        background-image: url("../img/secao-4-desktop.png");
+        width: 784px;
+        height: 508px;
+    }
+}
+
+footer {
+    background-color: #23272A;
+    height: 28vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .logo {
+    background-image: url("../img/logo-mobile.png");
+    width: 162px;
+    height: 45px;
+
+    @media screen and (min-width: 1280px) {
+        background-image: url("../img/logo-desktop.png");
+        width: 230px;
+        height: 63px;
+    }
+}
